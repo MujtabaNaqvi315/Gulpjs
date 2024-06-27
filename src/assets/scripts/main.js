@@ -49,11 +49,21 @@ function browserDetect() {
 $(document).ready(function () {
   // animateWords();
   
+  openCloseHomeSidebar()
+
   dataTrim();
   ChangeToSvg();
   formValidation();
 
 });
+
+// open / close home sidebar
+
+function openCloseHomeSidebar () {
+  $('.home-header .hamburger i').click(function(){ 
+    $('.home-sidebar').toggleClass('open');
+  });
+}
 
 
 function dataTrim() {
