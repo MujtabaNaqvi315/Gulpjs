@@ -1,0 +1,107 @@
+.page-wrapper {
+    background: var(--Sand-1, #E3DCD3);
+    min-height: 100vh;
+    .header-wrapper {
+        padding: 1.25rem 0;
+        display: flex;
+        justify-content: space-between;
+        .lang-switch {
+            display: flex;
+            height: fit-content;
+            a {
+                position: relative;
+                color: $secondaryColor;
+                padding: 0 0.5rem;
+                display: block;
+                &:last-child {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 1px;
+                        height: 100%;
+                        background: rgba($secondaryColor, 0.3)
+                    }
+
+                }
+            }
+        }
+    }
+    .detail-wrapper {
+        .post-box {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 120px;
+            .post-description {
+                flex: 0 0 51.15%;
+                max-width: 51.15%;
+                .post-detail {
+                    margin-top: 100px;
+                    .sec-btn {
+                        margin-top: 48px;
+                    }
+                }
+            }
+            .post-img {
+                flex: 0 0 42.28%;
+                max-width: 42.28%;
+                padding-top: 112px;
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.path {
+  stroke-dasharray: 1500; /* Adjust this value based on the length of your path */
+  stroke-dashoffset: 1500; /* Adjust this value based on the length of your path */
+  animation: draw 2s linear forwards; /* Adjust duration as needed */
+}
+.animBottomTop {
+    animation: anim_bottomTop 1s ease-in-out forwards;
+}
+.anim_fade {
+    opacity: 0;
+    animation: anim_fade 1s ease-in-out 1s forwards;
+}
+.anim_fade2 {
+    opacity: 0;
+    animation: anim_fade2 1s ease-in-out 1.5s forwards;
+}
+@keyframes draw {
+    from {
+      stroke-dashoffset: 1500; /* Adjust this value based on the length of your path */
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes anim_bottomTop {
+    from {
+      transform: translateY(3rem);
+      opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  @keyframes anim_fade {
+   
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  @keyframes anim_fade2 {
+   
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
