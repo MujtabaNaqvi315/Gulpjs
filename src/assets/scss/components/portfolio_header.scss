@@ -1,0 +1,43 @@
+.portfolio-header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: .9rem;
+    text-shadow: .025rem 0 black;
+
+    .left-content{
+        display: flex;
+
+        a {
+            color: black;
+        }
+
+        a:not(:last-of-type) {
+            margin-right: 2.5rem;
+        }
+    }
+
+    .right-content {
+        display: flex;
+        align-items: center;
+
+        .email {
+            margin-right: 2.5rem;
+        }
+
+        button {
+            background: none;
+            font-size: .9rem;
+            font-family: Helvetica;
+            text-shadow: .025rem 0 #000;
+            text-transform: uppercase;
+            border: .07rem solid black;
+            border-radius: 2rem;
+            padding: .7rem 1rem;
+        }
+    }
+}
