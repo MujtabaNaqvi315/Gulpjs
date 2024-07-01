@@ -96,9 +96,9 @@ h5,
 }
 
 .body2 {
-  font-size: 1.125rem;
+  font-size: 2rem;
   line-height: 1.4;
-  font-weight: 300;
+  font-weight: 900;
   font-family: $secondaryFont;
 
   /*rtl:raw:line-height: 1.6; */
@@ -113,7 +113,7 @@ h5,
 }
 .body3 {
     font-size: 1.2rem;
-    text-shadow: 0.025rem 0.025rem #221f20;
+    text-shadow: 0.025rem 0.025rem $secondaryColor;
     line-height: 1.4;
     font-family: $secondaryFont;
 	/*rtl:raw:line-height: 1.6; */
@@ -130,9 +130,10 @@ h5,
 }
 
 .body4 {
-  font-size: 0.88rem;
+  font-size: 0.71rem;
   line-height: 1.4;
-  font-weight: 300;
+  //font-weight: 300;
+  text-shadow: 0.015rem 0 $secondaryColor;
   font-family: $secondaryFont;
 
   /*rtl:raw:line-height: 1.6; */
