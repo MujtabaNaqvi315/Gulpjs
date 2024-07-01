@@ -112,10 +112,10 @@ h5,
   }
 }
 .body3 {
-	font-size: 1rem;
-	line-height: 1.4;
-	font-weight: 300;
-  font-family: $secondaryFont;
+    font-size: 1.2rem;
+    text-shadow: 0.025rem 0.025rem #221f20;
+    line-height: 1.4;
+    font-family: $secondaryFont;
 	/*rtl:raw:line-height: 1.6; */
 
 	&.white {
