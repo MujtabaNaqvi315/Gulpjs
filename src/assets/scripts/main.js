@@ -49,7 +49,9 @@ function browserDetect() {
 $(document).ready(function () {
   // animateWords();
   
-  openCloseHomeSidebar()
+  openCloseHomeSidebar();
+
+  showcaseIsotopes();
 
   dataTrim();
   ChangeToSvg();
@@ -65,6 +67,24 @@ function openCloseHomeSidebar () {
   });
 }
 
+
+// showcase isotopes
+
+function showcaseIsotopes() {
+
+  // init Isotope
+  var $grid = $('.portfolio-showcase .grid').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows'
+  });
+
+  $grid.isotope({ filter: '.landscape' });
+
+  $('.portfolio-showcase .filter-button-group').on('click', 'button', function(){
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+}
 
 function dataTrim() {
   var ellipsis = "...";

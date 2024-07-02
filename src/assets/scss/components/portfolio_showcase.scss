@@ -40,21 +40,37 @@
     .grid {
         display: flex;
         justify-content: space-between;
-        column-gap: 1rem;
-        row-gap: 1rem;
+        column-gap: 2rem;
+        row-gap: 3rem;
+        flex-wrap: wrap;
 
         .element-item {
-            width: 50%;
+            width: 49%;
 
             img {
                 width: 100%;
                 max-height: 50rem;
             }
 
+            .row2-img {
+                margin-top: 3rem;
+            }
+
+            .subtitle {
+                margin: 1.5rem 0 .1rem;
+            }
+
             .heading {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                .text {
+
+                    p {
+                        margin: 0;
+                    }
+                }
 
                 .arrow {
 
@@ -64,6 +80,11 @@
                     }
                 }
             }
+        }
+
+        .col-2 {
+            //left: 51% !important;
+            margin-left: 2rem;
         }
     }
 }
