@@ -1,0 +1,44 @@
+.footer {
+    background-color: $secondaryColor;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+
+        .left-content {
+
+            .body1 {
+                margin-bottom: 1.5rem;
+            }
+
+            .street {
+                margin-bottom: 1.5rem;
+            }
+
+            .address {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .right-content {
+            img {
+                height: 100%;
+            }
+        }
+
+    }
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .body4 {
+            font-size: 1rem;
+        }
+    }
+}
