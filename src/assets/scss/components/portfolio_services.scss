@@ -1,0 +1,56 @@
+.portfolio-services{
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+
+        .text {
+
+            .star-span {
+                display: flex;
+                align-items: center;
+
+                .star {
+                    font-size: 2.5rem;
+                    margin-bottom: .6rem;
+                }
+
+                @media (max-width: 600px) {
+                    .star {
+                        font-size: .7rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-between;
+
+        .service {
+            max-width: 23%;
+
+            .image {
+                max-height: 17.875rem;
+                height: 17.875rem;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .text {
+
+                .body2 {
+
+                    margin-bottom: 1.1rem;
+                }
+            }
+        }
+    }
+}
