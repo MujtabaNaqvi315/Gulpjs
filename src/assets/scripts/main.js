@@ -53,6 +53,8 @@ $(document).ready(function () {
 
   showcaseIsotopes();
 
+  serviceSlider ();
+
   dataTrim();
   ChangeToSvg();
   formValidation();
@@ -83,6 +85,18 @@ function showcaseIsotopes() {
   $('.portfolio-showcase .filter-button-group').on('click', 'button', function(){
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
+  });
+}
+
+// services slider
+
+function serviceSlider () {
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    // loop: true,
+  
+    slidesPerView: 3,
   });
 }
 

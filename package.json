@@ -19,7 +19,8 @@
     "bootstrap": "^5.3.3",
     "delete-empty": "^3.0.0",
     "postcss": "^8.4.38",
-    "sass": "^1.72.0"
+    "sass": "^1.72.0",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.24.3",
