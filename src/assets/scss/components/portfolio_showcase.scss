@@ -89,6 +89,20 @@
             margin-left: 2rem;
         }
     }
+
+    @media (max-width: 991px) {
+        .grid {
+
+            .element-item {
+                width: 48.59%;
+
+                img {
+                    max-height: 48rem;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 600px) {
