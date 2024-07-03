@@ -61,6 +61,11 @@
         column-gap: 1rem;
         align-items: center;
 
+        .pagination {
+            display: flex;
+            column-gap: .3rem;
+        }
+
         .btns {
             display: flex;
             column-gap: .5rem;

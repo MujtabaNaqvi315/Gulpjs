@@ -117,10 +117,16 @@ function serviceSlider () {
     on: {
       slideChange: function () {
         var index_currentSlide = this.realIndex + 1;
-        console.log(index_currentSlide); 
+        //console.log(index_currentSlide); 
+
+        $('.portfolio-services .current-slide-js').html(index_currentSlide);
       },
     }
   });
+
+  const total_slides = ($('.portfolio-services .swiper-slide')).length;
+  //console.log(total_slides);
+  $('.portfolio-services .total-slide-js').html(total_slides);
 }
 
 function dataTrim() {
