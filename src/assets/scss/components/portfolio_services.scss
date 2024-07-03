@@ -99,3 +99,25 @@
     }
 
 }
+
+@media (max-width: 600px) {
+    .portfolio-services {
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
+
+        .heading {
+            flex-wrap: wrap;
+        }
+
+        .services {
+
+            .service {
+
+                .image {
+                    height: auto;
+                }
+            }
+        }
+    }
+}

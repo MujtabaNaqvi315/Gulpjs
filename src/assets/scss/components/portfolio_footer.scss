@@ -22,14 +22,73 @@
                 display: flex;
                 justify-content: space-between;
             }
+
+            @media (max-width: 991px){
+                .address {
+                    display: flex;
+                    column-gap: 15%;
+                    justify-content: normal;
+                }
+
+            }
+
+            @media (max-width: 600px) {
+                .address {
+                    column-gap: 0;
+                    justify-content: center;
+                    row-gap: .8rem;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        @media (max-width: 600px) {
+            .left-content {
+                text-align: center;
+            }
         }
 
         .right-content {
             img {
                 height: 100%;
             }
+
+            @media (max-width: 991px) {
+                img {
+                    height: fit-content;
+                    max-width: 70%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                img {
+                    max-width: none;
+                    width: inherit;
+                }
+            }
         }
 
+        @media (max-width: 991px) {
+            .right-content {
+                text-align: end;
+            }
+
+        }
+        
+        @media (max-width: 600px) {
+            .right-content {
+                margin-top: 3rem;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .footer-1 {
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
     }
 
     .footer-2 {
@@ -39,6 +98,24 @@
 
         .body4 {
             font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .footer-2 {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .left-content {
+                display: flex;
+                flex-direction: column;
+                row-gap: .5rem;
+                align-items: center;
+
+                a {
+                    margin-right: 0;
+                }
+            }
         }
     }
 }

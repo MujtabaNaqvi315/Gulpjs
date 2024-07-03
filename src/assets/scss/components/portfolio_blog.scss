@@ -32,4 +32,34 @@
             }
         }        
     }
+
+    @media (max-width: 991px) {
+        .blogs {
+            flex-wrap: wrap;
+            column-gap: 1rem;
+            row-gap: 1rem;
+            
+            a {
+                max-width: 49%;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .blogs {
+            justify-content: center;
+
+            a {
+                max-width: 80%;
+
+                .blog {
+                    
+                    .image {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -121,7 +121,21 @@ function serviceSlider () {
 
         $('.portfolio-services .current-slide-js').html(index_currentSlide);
       },
-    }
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      601: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 47.5,
+      },
+    },
   });
 
   const total_slides = ($('.portfolio-services .swiper-slide')).length;

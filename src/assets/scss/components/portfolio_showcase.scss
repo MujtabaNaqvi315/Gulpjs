@@ -25,7 +25,9 @@
     }
 
     .btns {
-
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: .7rem;
         margin-bottom: 3rem;
 
         button {
@@ -85,6 +87,40 @@
         .col-2 {
             //left: 51% !important;
             margin-left: 2rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-showcase {
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
+
+        .title-text {
+            max-width: 100%;
+        }
+
+        .grid {
+            height: auto !important;
+
+            .element-item {
+                width: 80%;
+                position: static !important;
+                margin-left: 10%;
+
+                img {
+                    max-height: 20rem;
+                }
+
+                .row2-img {
+                    margin-top: 0;
+                }
+            }
+
+            .col-2 {
+                margin-left: 10%;
+            }
         }
     }
 }
