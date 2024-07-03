@@ -94,9 +94,32 @@ function serviceSlider () {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     // direction: 'vertical',
-    // loop: true,
-  
-    slidesPerView: 3,
+
+    slidesPerView: 4,
+    //slidesPerGroup: 4,
+    //freeMode: true,
+    spaceBetween: 47.5,
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   //clickable: true,
+    //   type: "fraction",
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // custom pagination
+    on: {
+      slideChange: function () {
+        var index_currentSlide = this.realIndex + 1;
+        console.log(index_currentSlide); 
+      },
+    }
   });
 }
 
