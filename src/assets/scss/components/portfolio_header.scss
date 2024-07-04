@@ -19,6 +19,26 @@
         // a:not(:last-of-type) {
         //     margin-right: 2.5rem;
         // }
+
+        i {
+            display: none;
+        }
+
+        @media (max-width: 991px) {
+            a:not(:last-of-type) {
+                margin-right: 2rem;
+            }
+        }
+
+        @media (max-width: 600px){
+            a {
+                display: none;
+            }
+
+            i {
+                display: block;
+            }
+        }
     }
 
     .right-content {
@@ -39,5 +59,25 @@
         //     border-radius: 2rem;
         //     padding: .7rem 1rem;
         // }
+
+        @media (max-width: 991px) {
+            .email {
+                margin-right: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .email {
+                display: none;
+            }
+
+            .btn {
+
+                .header-btn {
+                    font-size: .5rem;
+                    padding: .5rem .7rem;
+                }
+            }
+        }
     }
 }
