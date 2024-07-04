@@ -107,33 +107,55 @@
 
 @media (max-width: 600px) {
     .portfolio-showcase {
-        margin-left: 10%;
-        margin-right: 10%;
-        max-width: 80%;
+        // margin-left: 10%;
+        // margin-right: 10%;
+        // max-width: 80%;
 
         .title-text {
             max-width: 100%;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .btns {
+            margin-bottom: 2rem;
         }
 
         .grid {
             height: auto !important;
+            row-gap: 1.5rem;
 
             .element-item {
-                width: 80%;
+                width: 100%;
                 position: static !important;
-                margin-left: 10%;
+                margin-left: 0;
 
                 img {
-                    max-height: 20rem;
+                    max-height: 32rem;
                 }
 
                 .row2-img {
                     margin-top: 0;
                 }
+
+                .subtitle {
+                    margin: .8rem 0 .2rem;
+                    font-size: .4rem;
+                }
+
+                .heading {
+                    margin-top: -.3rem;
+
+                    .arrow {
+
+                        i {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
             }
 
             .col-2 {
-                margin-left: 10%;
+                margin-left: 0;
             }
         }
     }

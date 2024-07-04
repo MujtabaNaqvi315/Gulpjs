@@ -358,6 +358,12 @@ a {
   &-5 {
     margin-bottom: 5rem;
   }
+
+  @media (max-width: 600px) {
+    &-5 {
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 .toSvg {

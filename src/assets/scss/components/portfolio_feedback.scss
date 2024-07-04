@@ -50,8 +50,8 @@
 
     @media (max-width: 600px) {
         .heading {
-            margin-bottom: 1.8rem;
-            margin-left: 10%;
+            margin-bottom: 1.5rem;
+            // margin-left: 10%;
         }
 
         .content {
@@ -59,17 +59,17 @@
             justify-content: center;
 
             .image {
-                max-width: 80%;
-                margin-bottom: 2rem;
+                max-width: 100%;
+                margin-bottom: 1rem;
             }
 
             .text {
-                width: 80%;
+                width: 100%;
 
                 .title {
 
                     p {
-                        margin-bottom: 1.5rem;
+                        margin-bottom: 1rem;
                     }
                 }
             }

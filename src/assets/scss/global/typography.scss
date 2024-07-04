@@ -7,8 +7,13 @@ h1,
   font-weight: 900;
   margin: 0 0 1rem;
 
+  @media #{$vpTablet991} {
+    font-size: 6.479rem;
+  }
+
   @media #{$vpMobile600} {
-    font-size: 3rem;
+    font-size: 2.042rem;
+    margin-bottom: .3rem;
   }
 
   &.white {
@@ -113,10 +118,15 @@ h5,
 }
 .body3 {
     font-size: 1.2rem;
-    text-shadow: 0.025rem 0.025rem $secondaryColor;
+    // text-shadow: 0.025rem 0.025rem $secondaryColor;
+    //font-weight: 600;
     line-height: 1.4;
     font-family: $secondaryFont;
 	/*rtl:raw:line-height: 1.6; */
+
+  @media #{$vpMobile600} {
+    font-size: .9rem;
+  }
 
 	&.white {
 		color: $white;
@@ -133,7 +143,8 @@ h5,
   font-size: 0.71rem;
   line-height: 1.4;
   //font-weight: 300;
-  text-shadow: 0.015rem 0 $secondaryColor;
+  font-weight: 600;
+  // text-shadow: 0.015rem 0 $secondaryColor;
   font-family: $secondaryFont;
 
   /*rtl:raw:line-height: 1.6; */

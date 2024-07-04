@@ -102,20 +102,43 @@
 
 @media (max-width: 600px) {
     .portfolio-services {
-        margin-left: 10%;
-        margin-right: 10%;
-        max-width: 80%;
+        // margin-left: 10%;
+        // margin-right: 10%;
+        // max-width: 80%;
 
         .heading {
             flex-wrap: wrap;
+            margin-bottom: 2rem;
+
+            .text {
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .detail {
+
+                p{
+                    margin-bottom: 0;
+                }
+            }
         }
 
         .services {
+            padding-bottom: .6rem;
 
             .service {
 
                 .image {
                     height: auto;
+                }
+
+                .text {
+
+                    .body2 {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }

@@ -77,14 +77,15 @@
 
 .p-btn {
   background: none;
+  font-family: Helvetica;
   font-size: .9rem;
   border: .07rem solid $secondaryColor;
   border-radius: 2rem;
   cursor: pointer;
 
   &.header-btn {
-    font-family: Helvetica;
-    text-shadow: .025rem 0 $secondaryColor;
+    font-weight: 600;
+    // text-shadow: .025rem 0 $secondaryColor;
     text-transform: uppercase;
     padding: .7rem 1rem;
   }
@@ -92,5 +93,11 @@
   &.inner-btn {
     padding: .4rem 1rem;
     margin-top: 1.5rem;
+  }
+}
+
+@media #{$vpMobile600} {
+  .p-btn {
+    font-size: .7rem;
   }
 }

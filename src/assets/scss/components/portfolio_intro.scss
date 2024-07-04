@@ -42,8 +42,8 @@
 @media (max-width: 600px) {
     .portfolio-intro {
         display: block;
-        margin-left: 10%;
-        max-width: 80%;
+        // margin-left: 10%;
+        // max-width: 80%;
 
         .heading {
             margin-bottom: 1.5rem;
@@ -51,6 +51,10 @@
 
         .description {
             width: 100%;
+
+            .p-btn {                
+                margin-top: 1rem;                
+            }
         }
     }
 }

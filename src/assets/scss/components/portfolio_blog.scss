@@ -46,16 +46,22 @@
     }
 
     @media (max-width: 600px) {
+
+        .heading {
+            margin-bottom: 1.5rem;
+        }
+
         .blogs {
             justify-content: center;
 
             a {
-                max-width: 80%;
+                max-width: 100%;
 
                 .blog {
                     
                     .image {
                         height: auto;
+                        margin-bottom: .7rem;
                     }
                 }
             }
