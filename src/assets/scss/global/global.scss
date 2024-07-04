@@ -35,6 +35,10 @@ body {
   /*rtl:raw:font-family: "HelveticaNeueLT-Arabic";*/
 }
 
+body:has(.portfolio-sidebar.open) {
+  overflow: hidden;
+}
+
 
 .sec-padded {
   padding: 12.5rem 0;

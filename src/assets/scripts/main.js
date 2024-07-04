@@ -51,6 +51,8 @@ $(document).ready(function () {
   
   openCloseHomeSidebar();
 
+  openClosePortfolioSidebar ();
+
   showcaseIsotopes();
 
   serviceSlider ();
@@ -69,6 +71,21 @@ function openCloseHomeSidebar () {
   });
 }
 
+// open / close portfolio sidebar
+
+function openClosePortfolioSidebar () {
+  $('.portfolio-header .left-content i').click(function(){
+    $('.portfolio-sidebar').toggleClass('open');
+  });
+
+  $(document).load($(window).bind("resize", checkPosition));
+  function checkPosition()
+  {
+      if ($(window).width() > 600){
+          $('.portfolio-sidebar').removeClass('open');
+      }
+  }
+}
 
 // showcase isotopes
 
