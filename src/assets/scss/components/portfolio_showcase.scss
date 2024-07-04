@@ -28,7 +28,7 @@
         display: flex;
         flex-wrap: wrap;
         row-gap: .7rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
 
         button {
             margin-top: 0;
@@ -37,6 +37,10 @@
         button:not(:last-of-type) {
             margin-right: .3rem;
         }
+    }
+
+    .num-of-items {
+        margin-bottom: 1.5rem;
     }
 
     .grid {
@@ -116,9 +120,9 @@
             margin: 1.5rem 0 1rem;
         }
 
-        .btns {
-            margin-bottom: 2rem;
-        }
+        // .btns {
+        //     margin-bottom: 2rem;
+        // }
 
         .grid {
             height: auto !important;
