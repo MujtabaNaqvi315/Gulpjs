@@ -113,6 +113,8 @@ function showcaseIsotopes() {
     // Changing number (It has _ items)
     var numItem = $('.portfolio-showcase ' + filterValue).length;
     $('.portfolio-showcase .num-of-items .num').html(numItem);
+
+    // changing category name
     var category_name = $(this).html().toLowerCase();
     var first_letter = category_name[0].toUpperCase();
     var title_name = category_name.replace(category_name[0], first_letter);
