@@ -111,6 +111,10 @@ function showcaseIsotopes() {
     var first_letter = category_name[0].toUpperCase();
     var title_name = category_name.replace(category_name[0], first_letter);
     $('.portfolio-showcase .num-of-items .name').html(title_name);
+
+    //Adding active btn affect
+    $('.portfolio-showcase .btns button').removeClass('active');
+    $(this).addClass('active');
   });
 }
 

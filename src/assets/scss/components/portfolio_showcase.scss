@@ -1,5 +1,7 @@
 .portfolio-showcase {
 
+    overflow: hidden;
+
     .title {
         display: flex;
         justify-content: space-between;
@@ -32,6 +34,11 @@
 
         button {
             margin-top: 0;
+        }
+
+        button.active {
+            background-color: $secondaryColor;
+            color: $white;
         }
 
         button:not(:last-of-type) {
