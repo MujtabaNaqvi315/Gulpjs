@@ -112,6 +112,12 @@ function showcaseIsotopes() {
     var title_name = category_name.replace(category_name[0], first_letter);
     $('.portfolio-showcase .num-of-items .name').html(title_name);
 
+    if (numItem < 2) {
+      $('.portfolio-showcase .num-of-items .itms').html('item');
+    } else {
+      $('.portfolio-showcase .num-of-items .itms').html('items');
+    }
+    
     //Adding active btn affect
     $('.portfolio-showcase .btns button').removeClass('active');
     $(this).addClass('active');
