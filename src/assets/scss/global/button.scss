@@ -96,6 +96,10 @@
   }
 }
 
+.p-btn:hover {
+  background-color: $hoverColor;
+}
+
 @media #{$vpMobile600} {
   .p-btn {
     font-size: .7rem;

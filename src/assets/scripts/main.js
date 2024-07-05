@@ -76,6 +76,12 @@ function openCloseHomeSidebar () {
 function openClosePortfolioSidebar () {
   $('.portfolio-header .left-content i').click(function(){
     $('.portfolio-sidebar').toggleClass('open');
+    $('.portfolio-sidebar .item').removeClass('active');
+  });
+
+  $('.portfolio-sidebar .item').click(function(){
+    $('.portfolio-sidebar .item').removeClass('active');
+    $(this).addClass('active');
   });
 
   $(document).on('load', $(window).bind("resize", checkPosition));
